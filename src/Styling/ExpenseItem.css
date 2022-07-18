@@ -1,0 +1,15 @@
+.expense-item {
+  margin: 16px;
+  padding: 42px;
+  font-size: larger;
+  background-color: rgba(60, 54, 54, 0.95);
+  border-radius: 8px;
+}
+
+.expense-item-component {
+  margin: 16px;
+  padding: 16px;
+  background-color: black;
+  border-radius: 6px;
+  color: rgb(247, 247, 246);
+}

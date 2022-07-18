@@ -1,0 +1,19 @@
+.new-expense {
+  margin: 13px;
+  padding: 13px;
+  display: flex;
+  flex-direction: row;
+  color: black;
+  background-color: rgb(31, 181, 181);
+  border-radius: 8px;
+}
+
+.new-expense-one {
+  margin: 13px;
+  padding: 13px;
+}
+
+.new-expense-two {
+  margin: 13px;
+  padding: 13px;
+}
