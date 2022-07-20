@@ -1,31 +1,18 @@
 import '../Styling/ExpenseItem.css'
 
-const ExpenseItem = () => {
-
-  const item = [
-    {
-    title: 'Toilet Paper',
-    amount: '10',
-    date: new Date('2020, 5, 12')
-  },
-  {
-    title: 'Cat Food',
-    amount: '120',
-    date: new Date('2021, 4, 7')
-  },
-  {
-    title: 'Car Wash',
-    amount: '15',
-    date: new Date('2021, 3, 9')
-  }
-]
-
+const ExpenseItem = (props) => {
+  const month = props.date.toLocaleString('en-US', { month: 'long' });
+  const day = props.date.toLocaleString('en-US', { day: '2-digit' });
+  const year = props.date.getFullYear()
   return (
     <div className="expense-item">
-    {item.map((i) => (
-      <div className="expense-item-component">{i.title}</div>
-    )
-    )}
+      <div className="item-left">
+        <h2>{props.title}</h2>
+        <div className="item-date">{month} {day}, {year}</div>
+      </div>
+      <div className="item-right">
+        <h3>${props.amount}</h3>
+      </div>
     </div>
   )
 }
