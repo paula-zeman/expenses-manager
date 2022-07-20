@@ -28,22 +28,27 @@ const NewExpense =  (props) => {
       date: new Date(enteredDate)
     }
     props.addExpense(expenseObject)
+    setTitle('');
+    setAmount('');
+    setDate('');
   }
+
+
 
 return (
   <div>
   <form className="new-expense" onSubmit={submitHandler}>
     <div className="new-expense-one">
       <div><label>Title</label></div>
-      <div><input type="text" value={enteredTitle} onChange={titleHandler}/></div>
+      <div className="new-input"><input type="text" value={enteredTitle} onChange={titleHandler}/></div>
       <div><label>Amount</label></div>
-      <div><input type="text" value={enteredAmount} onChange={amountHandler}/></div>
+      <div className="new-input"><input type="text" value={enteredAmount} onChange={amountHandler}/></div>
     </div>
     <div className="new-expense-two">
       <div><label>Date</label></div>
-      <div><input type="date" min="2019-01-01" max="2023-07-14" value={enteredDate} onChange={dateHandler}/></div>
+      <div className="new-input"><input type="date" min="2019-01-01" max="2023-07-14" value={enteredDate} onChange={dateHandler}/></div>
       <br />
-      <div><button type="submit">Add</button></div>
+      <div><button type="submit">Save</button></div>
     </div>
   </form>
   </div>

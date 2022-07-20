@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ExpenseList from './ExpenseList';
 import NewExpense from './NewExpense';
+import '../Styling/Container.css'
 
 const Container = () => {
 
