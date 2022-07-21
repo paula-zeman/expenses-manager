@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ExpenseList from './ExpenseList';
 import NewExpense from './NewExpense';
 import '../Styling/Container.css'
+import ExpenseSum from './ExpenseSum';
 
 const Container = () => {
 
@@ -15,10 +16,20 @@ const Container = () => {
     });
   }
 
+
   return (
-    <div>
-      <NewExpense addExpense={addExpenseHandler}/>
-      <ExpenseList expenses={expenses}/>
+    <div className="container">
+      <div className='container-top'>
+        <div className="container-list">
+          <NewExpense addExpense={addExpenseHandler}/>
+        </div>
+        <div className="expense-sum">
+          <ExpenseSum expenses={expenses}/>
+        </div>
+      </div>
+      <div className="expense-list">
+          <ExpenseList expenses={expenses}/>
+      </div>
     </div>
   )
 }

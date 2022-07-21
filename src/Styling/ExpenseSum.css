@@ -1,0 +1,16 @@
+.expense-sum {
+  margin: 16px;
+  padding: 0px 0px 0px 8px;
+  font-size: larger;
+  background-color: rgb(249, 216, 173);
+  border-radius: 8px;
+}
+
+.total {
+  text-decoration: underline;
+  text-align: right;
+}
+
+.sum {
+  text-align: right;
+}
