@@ -3,12 +3,13 @@
   justify-content: space-between;
   align-items: baseline;
   margin: 16px;
-  padding: 34px;
+  padding: 0px 16px;
   font-size: larger;
-  background-color: rgba(81, 81, 81, 0.95);
+  background-color: rgb(249, 216, 173);
   border-radius: 8px;
 }
 
 .item-date {
   font-size: smaller;
+  margin-bottom: 4px;
 }

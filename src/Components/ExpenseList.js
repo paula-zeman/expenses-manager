@@ -4,7 +4,6 @@ import ExpenseItem from "./ExpenseItem";
 
 const ExpenseList = (props) => {
 
-
 return (
   <div>
   {props.expenses.map((expense) => (
