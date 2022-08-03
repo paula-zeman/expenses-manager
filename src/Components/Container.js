@@ -28,7 +28,8 @@ const Container = () => {
         </div>
       </div>
       <div className="expense-list">
-          <ExpenseList expenses={expenses}/>
+          <ExpenseList expenses={expenses}
+          />
       </div>
     </div>
   )
