@@ -20,7 +20,7 @@ const Container = () => {
   return (
     <div className="container">
       <div className='container-top'>
-        <div className="container-list">
+        <div>
           <NewExpense addExpense={addExpenseHandler}/>
         </div>
         <div className="expense-sum">

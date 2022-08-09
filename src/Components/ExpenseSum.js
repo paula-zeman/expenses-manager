@@ -9,9 +9,9 @@ const ExpenseSum = (props) => {
   ));
 
   return (
-    <div className="expense-sum">
+    <div className="sum">
       <h3 className="total">Total:</h3>
-      <h3 className="sum">${sum}</h3>
+      <h3 className="number">${sum}</h3>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import '../Styling/ExpenseFilter.css';
 
 const ExpenseFilter = (props) => {
 
@@ -7,8 +8,8 @@ const ExpenseFilter = (props) => {
   }
 
   return (
-    <div className="filter">
-      <select onChange={selectedYear}>
+    <div>
+      <select className="filter" onChange={selectedYear}>
         <option value="2018">2018</option>
         <option value="2019">2019</option>
         <option value="2020">2020</option>
