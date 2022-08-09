@@ -22,8 +22,10 @@ return (
     <div>
       <ExpenseFilter filterYear={addFilterHandler}/>
     </div>
-  {filteredExpenseList.length === 0 ? (<p>No expenses for {filteredYear.toString()}</p>) :
-  (filteredExpenseList.map((expense) => (
+  {filteredExpenseList.length === 0 ? (
+    <p>No expenses for {filteredYear.toString()}</p>
+    ) : (
+  filteredExpenseList.map((expense) => (
     <ExpenseItem
     key={expense.id}
     title={expense.title}
